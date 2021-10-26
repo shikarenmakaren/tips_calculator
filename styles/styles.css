@@ -1,0 +1,252 @@
+/* font-family: 'Space Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+ul, li, h4, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    font-size: 24px;
+}
+
+
+body {
+    font-family: 'Space Mono', monospace;  
+
+    background-color: #afdfdc;
+}
+
+
+
+
+.main {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 65px 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.calc {
+    margin-top: 85px;
+    padding: 35px;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff;
+    width: 920px;
+    height: 480px;
+}
+/* левая колонка */
+.calc__list {
+    /* background-color: #fff; */
+    flex-shrink: 1;
+    flex-basis: 48%;
+
+    padding: 14px;
+}
+
+.calc__item {
+    /* margin-bottom: 48px; */
+    width: 100%;
+}
+
+.calc__item:not(:first-child) {
+    margin-top: 40px;
+}
+
+.calc__input {
+    margin-top: 10px;
+}
+
+.calc__input {
+    width: 100%;
+    padding: 8px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #F4FAFA;
+
+    text-align: right;
+    color: #00494D;
+    font-weight: 400;
+}
+    input::-webkit-input-placeholder { 
+        color: #00494D; 
+    }
+
+    .calc__input:hover {
+        border: 2px solid #26C0AB;
+        cursor: pointer;
+    }
+
+    .calc__input:active::-webkit-input-placeholder,
+    .calc__input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+.input__price {
+    background-image: url('/images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+
+.input__person {
+    background-image: url('/images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}    
+
+/* правая колонка */
+.calc__result {
+    flex-shrink: 1;
+    flex-basis: 48%;
+
+    background-color: #00494D;
+    border-radius: 20px;
+}
+
+.calc__title {
+    margin-bottom: 10px;
+    color: #5d8080;
+}
+
+
+.calc__tips {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+
+.tips__item {
+    display: block;
+
+    width: 30%;
+    /* height: 48px; */
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    background-color: #00494D;
+    border-radius: 5px;
+
+    font-size: 24px;
+    color: #fff;    
+}
+
+.tips__item-common {
+    padding: 8px;
+
+}
+
+.tips__item:not(:last-child):hover {
+    background-color: #26C0AB;
+    cursor: pointer;
+}
+
+.tips__item-custom {
+    background-color: #F4FAFA;
+    color: #00494D;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 8px;
+
+
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+    .custom-input:active,
+    .custom-input:focus {
+        text-align: right;
+        border: 1px solid #26C0AB;
+    }
+
+    .custom-input:active::-webkit-input-placeholder,
+    .custom-input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+
+
+.custom-input:hover {
+    border: 1px solid #26C0AB;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.tips__item:not(:nth-child(3n+3)) {
+    margin-right: 16px;
+}
+
+
+.calc__result {
+    padding: 55px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.options__item {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options__title {
+    color: #F4FAFA;
+    /* display: block; */
+}
+
+.options__descr {
+    display: block;
+    margin-top: 8px;
+
+    font-size: 12px;
+    color: #afdfdc;
+}
+
+.options__price {
+    font-size: 46px;
+    font-weight: 700;
+    color: #26C0AB;
+}
+
+.options__btn {
+    background-color: #26c0ab58;
+    padding: 13px;
+    border-radius: 5px;
+
+    color: #00494D;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.options__btn:hover {
+    background-color: #afdfdc;
+}
